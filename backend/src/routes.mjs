@@ -3,6 +3,10 @@
  */
 export function makeRoutes(app) {
   app.get("/api/question", (req, res) => {
-    res.send("Hello World !")
+    res.send({
+      question: "Lorem ipsum dolor sit amet",
+      responses: ["A", "B", "C", "D"],
+      valid: 0
+    })
   })
 }
