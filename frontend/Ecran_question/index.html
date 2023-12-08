@@ -10,20 +10,26 @@
   <body>
     <div class="question">
       <div class="div">
-        <div class="lifes">
-          <div class="overlap-group">
-            <div class="div-2"></div>
-            <img class="coeur" src="img/coeur-1.png" />
-            <img class="img" src="img/coeur-1.png" />
-            <img class="coeur-2" src="img/coeur-1.png" />
+        <div class="left_side">
+          <div class="lifes">
+            <div class="overlap-group">
+              <img src="img\perroquet_only.svg" class="life_point" id="lp1" width="100px"/>
+              <img src="img\perroquet_only.svg" class="life_point" id="lp2" width="100px"/>
+              <img src="img\perroquet_only.svg" class="life_point" id="lp3" width="100px"/>
+            </div>
+          </div>
+          <div class="success-bar">
+            <div class="success-bar-bg">
+              <div class="success-bar-over">
+              </div>
+            </div>
           </div>
         </div>
         <div class="frame">
           <div class="overlap"><p class="text-wrapper" id="question"></p></div>
         </div>
-        <div class="success-bar"></div>
-        <div class="quit">
-          <div class="overlap-2">
+        <div class="quit" id="quitbutton">
+          <button class="overlap-2">
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
           </div>
@@ -54,5 +60,52 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var quitbutton = document.getElementById("quitbutton");
+      if (quitbutton) {
+        quitbutton.addEventListener("click", function (e) {
+          window.location.href = "../Ecran_accueil/index.html";
+        });
+      }
+
+      var progressbar = document.querySelector(".success-bar-over");
+      var progressbarvalue = 0;
+      progressbar.style.width = `${progressbarvalue}%`;
+
+      var life = 3;
+
+      function updateProgressbar(value) {
+        if(value == 1) {
+          progressbarvalue += 10;
+          progressbar.style.width = `${progressbarvalue}%`;
+          progressbar.style.color = `#6BD844`;
+        }
+        else if(value == 0) {
+          progressbarvalue -= 10;
+          progressbar.style.color = `#D84444`;
+          updateLife();
+        }
+      }
+
+      function updateLife() {
+        switch(life) {
+
+          case 3:
+            document.getElementById("lp3").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+          case 2:
+            document.getElementById("lp2").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+          case 1:
+            document.getElementById("lp1").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+        }
+      }
+    </script>
+
   </body>
 </html>
