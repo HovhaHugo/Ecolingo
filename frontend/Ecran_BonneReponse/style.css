@@ -1,0 +1,212 @@
+.rponse-succs {
+  background-color: #131f24;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.rponse-succs .div {
+  background-color: #131f24;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.rponse-succs .lifes {
+  position: absolute;
+  width: 350px;
+  height: 116px;
+  top: 45px;
+  left: 50px;
+}
+
+.rponse-succs .overlap-group {
+  position: relative;
+  height: 116px;
+}
+
+.rponse-succs .question {
+  position: absolute;
+  width: 350px;
+  height: 111px;
+  top: 5px;
+  left: 0;
+  background-color: #2e6ce6;
+  border-radius: 25px;
+  box-shadow: 0px 5px 4px #15336e;
+}
+
+.rponse-succs .coeur {
+  position: absolute;
+  width: 109px;
+  height: 111px;
+  top: 0;
+  left: 4px;
+  object-fit: cover;
+}
+
+.rponse-succs .img {
+  position: absolute;
+  width: 109px;
+  height: 111px;
+  top: 0;
+  left: 113px;
+  object-fit: cover;
+}
+
+.rponse-succs .coeur-2 {
+  position: absolute;
+  width: 109px;
+  height: 111px;
+  top: 0;
+  left: 222px;
+  object-fit: cover;
+}
+
+.rponse-succs .frame {
+  position: absolute;
+  width: 701px;
+  height: 548px;
+  top: 45px;
+  left: 609px;
+}
+
+.rponse-succs .overlap {
+  position: relative;
+  width: 998px;
+  height: 548px;
+  left: -148px;
+  background-color: #ffffff;
+  border-radius: 69px;
+  box-shadow: 0px 10px 4px #6bd844;
+}
+
+.rponse-succs .text-wrapper {
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  top: 117px;
+  left: 50px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.rponse-succs .text-wrapper-2 {
+  position: absolute;
+  width: 661px;
+  height: 58px;
+  top: 59px;
+  left: 168px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.rponse-succs .success-bar {
+  position: absolute;
+  width: 350px;
+  height: 30px;
+  top: 188px;
+  left: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 4px #424242;
+}
+
+.rponse-succs .rectangle {
+  width: 61px;
+  height: 30px;
+  background-color: #6ad744;
+  border-radius: 10px;
+}
+
+.rponse-succs .bouton-droite {
+  position: absolute;
+  width: 602px;
+  height: 100px;
+  top: 750px;
+  left: 654px;
+}
+
+.rponse-succs .overlap-2 {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  background-color: #2e6ce6;
+  border-radius: 20px;
+  box-shadow: 0px 5px 4px #15336e;
+}
+
+.rponse-succs .fleche-droite {
+  position: absolute;
+  width: 46px;
+  height: 74px;
+  top: 13px;
+  left: 543px;
+}
+
+.rponse-succs .text-wrapper-3 {
+  position: absolute;
+  width: 386px;
+  height: 54px;
+  top: 23px;
+  left: 107px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.rponse-succs .quit {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 1784px;
+  background-color: #2e6de7;
+  border-radius: 50px;
+  box-shadow: 0px 5px 4px #15336e;
+}
+
+.rponse-succs .overlap-3 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+}
+
+.rponse-succs .rectangle-2 {
+  position: absolute;
+  width: 10px;
+  height: 75px;
+  top: -7px;
+  left: 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transform: rotate(-45deg);
+}
+
+.rponse-succs .rectangle-3 {
+  position: absolute;
+  width: 10px;
+  height: 75px;
+  top: -7px;
+  left: 25px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
