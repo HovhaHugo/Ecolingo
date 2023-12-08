@@ -1,1 +1,0 @@
-export { RponseSuccs } from "./RponseSuccs";

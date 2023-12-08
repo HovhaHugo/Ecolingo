@@ -41,13 +41,47 @@
 .accueil .text-wrapper {
   position: absolute;
   width: 386px;
-  height: 54px;
+  height: 242px;
   top: 23px;
   left: 107px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 40px; 
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.image-peroquet{
+  left: 120px;
+  width: 170px;
+  height: 170px;
+}
+
+.accueil .text-wrapper-blanc {
+  position: absolute;
+  width: 386px;
+  height: 242px;
+  top: 23px;
+  left: -10px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 200px; 
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.accueil .text-wrapper-bleu {
+  width: 200px;
+  height: 220px;
+  top: 23px;
+  left: 120px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #2e6de7;
+  font-size: 200px; 
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -62,11 +96,16 @@
 }
 
 .accueil .overlap {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
   position: relative;
   width: 1230px;
   height: 265px;
 }
 
+/*
 .accueil .COL-NGO {
   position: absolute;
   height: 242px;
@@ -79,15 +118,7 @@
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-}
-
-.accueil .span {
-  color: #ffffff;
-}
-
-.accueil .text-wrapper-2 {
-  color: #2e6de7;
-}
+}*/
 
 .accueil .rectangle {
   position: absolute;
