@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>Hello World !</body>
+  <head>
+    <script>
+      fetch("/api/question").then((response) => response.json()).then((json) => loadtext(json));
+
+      function loadtext(question){
+        document.getElementById("question").textContent = question.Question
+        document.getElementById("repA").textContent = question.A
+        document.getElementById("repB").textContent = question.B
+        document.getElementById("repC").textContent = question.C
+        document.getElementById("repD").textContent = question.D
+        document.getElementById("explication").textContent = question.Explication
+      }
+    </script>
+  </head>
+  <body>
+    Bienvenue sur EcoQuiz !
+    <br><br>Question : <p id="question"></p>
+    <br>Réponse A : <p id="repA"></p>
+    <br>Réponse B : <p id="repB"></p>
+    <br>Réponse C : <p id="repC"></p>
+    <br>Réponse D : <p id="repD"></p>
+    <br>Explication : <p id="explication"></p>
+  </body>
 </html>

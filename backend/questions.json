@@ -1,60 +1,212 @@
 {
     "data":[
-        {
-          "Question": "Quel est la definition correct du climat ?",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "Quel est la definition correct du Gaz à effet de serres ?",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "Quel est la definition correct d'Albedo ?",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "Quel est la definition correct d'Économie circulaire ?",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "Les énergies fossiles sont-elles :",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "Les industries lourdes sont-elles :",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        },
-        {
-          "Question": "La surconsommation permet-elle :",
-          "Option A": 1,
-          "Option B": 2,
-          "Option C": 3,
-          "Option D": 4,
-          "Thème": ""
-        }
-      ]
+      {
+        "Question": "Quel est la définition correct du climat ?",
+        "A": "Le climat est la moyenne des conditions météorologiques sur une longue période dans une région donnée.",
+        "B": "Le climat est défini uniquement par la température quotidienne d'une région",
+        "C": "Le climat se réfère uniquement aux conditions météorologiques d'une journée spécifique",
+        "D": "Le climat est uniquement déterminé par les phénomènes météorologiques extrêmes, tels que les tempêtes et les ouragans",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quel est la définition correct du Gaz à effet de serres ?",
+        "A": "Les gaz à effet de serre (GES) sont des composés gazeux dans l'atmosphère qui contribuent au piégeage de la chaleur solaire, jouant ainsi un rôle dans le réchauffement de la planète",
+        "B": "Les gaz à effet de serre sont des substances qui refroidissent l'atmosphère en absorbant la chaleur du soleil",
+        "C": "Les gaz à effet de serre sont des émissions industrielles qui n'ont aucun impact sur le climat",
+        "D": "Les gaz à effet de serre se forment exclusivement à partir des activités humaines et n'ont pas de sources naturelles",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quel est la définition correct d'Albedo ?",
+        "A": "L'albedo est la mesure de la réflectivité d'une surface, indiquant la proportion de la lumière solaire réfléchie par rapport à celle absorbée",
+        "B": "L'albedo se réfère à la chaleur émise par une surface en réponse à l'exposition au soleil.",
+        "C": "L'albedo est une mesure de la température atmosphérique à une certaine altitude",
+        "D": "L'albedo est une unité de mesure de la quantité de gaz à effet de serre présente dans une atmosphère",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quel est la définition correct d'Économie circulaire ?",
+        "A": "L'économie circulaire est un modèle économique visant à réduire le gaspillage des ressources en favorisant la réutilisation, le recyclage et la régénération des produits",
+        "B": "L'économie circulaire est un système économique basé sur une croissance infinie des ressources naturelles",
+        "C": "L'économie circulaire encourage la consommation excessive pour stimuler l'activité économique",
+        "D": "L'économie circulaire se concentre uniquement sur l'élimination totale de la production de déchets sans considérer la réutilisation ou le recyclage",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quels sont les principaux types d'énergies fossiles ?",
+        "A": "Les principaux types d'énergies fossiles sont le pétrole, le charbon et le gaz naturel",
+        "B": "Les énergies fossiles comprennent exclusivement le bois et les biomasses",
+        "C": "L'énergie nucléaire est considérée comme une forme d'énergie fossile",
+        "D": "Le vent et l'énergie solaire sont également classés comme des types d'énergies fossiles",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment l'extraction des énergies fossiles peut-elle avoir un impact sur l'environnement ?",
+        "A": "L'extraction des énergies fossiles peut entraîner la dégradation des écosystèmes, la perte de biodiversité et la contamination des sols et des eaux",
+        "B": "L'extraction des énergies fossiles a un impact positif sur la biodiversité en créant des habitats artificiels",
+        "C": "L'extraction des énergies fossiles n'affecte que les zones éloignées de la vie sauvage",
+        "D": "L'extraction des énergies fossiles n'a aucun impact sur la qualité de l'air et de l'eau.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quelles sont les alternatives aux énergies fossiles ?",
+        "A": "Les alternatives aux énergies fossiles comprennent l'énergie solaire, éolienne, hydraulique, géothermique et l'énergie issue de biomasses",
+        "B": "Les alternatives aux énergies fossiles se limitent à l'utilisation de charbon propre et de gaz naturel",
+        "C": "Les énergies fossiles sont les seules sources d'énergie viables et durables.",
+        "D": "Les énergies renouvelables sont moins fiables et ne peuvent pas fournir une source constante d'électricité.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment les gouvernements peuvent-ils encourager la transition vers des sources d'énergie plus durables ?",
+        "A": "Les gouvernements peuvent encourager la transition vers des sources d'énergie plus durables en mettant en place des politiques incitatives telles que des subventions, des crédits d'impôt et des réglementations favorables.",
+        "B": "Les gouvernements ne jouent aucun rôle dans la transition vers des sources d'énergie durables",
+        "C": "Encourager la dépendance continue aux énergies fossiles est la meilleure stratégie pour la croissance économique.",
+        "D": "Les gouvernements peuvent seulement favoriser des sources d'énergie moins fiables et plus coûteuses.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quels sont les risques liés à la contamination des sols et des eaux par les déchets générés par les industries lourdes ?",
+        "A": "Les risques liés à la contamination des sols et des eaux par les déchets des industries lourdes comprennent la pollution de l'eau potable, la dégradation des écosystèmes aquatiques et des effets néfastes sur la santé humaine.",
+        "B": "Les déchets des industries lourdes n'ont aucun impact sur la qualité de l'eau ou du sol",
+        "C": "La contamination par les déchets des industries lourdes améliore la biodiversité des écosystèmes aquatiques.",
+        "D": "Les déchets des industries lourdes ne posent de risques que dans des régions éloignées et peu habitées.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quels sont les exemples de meilleures pratiques environnementales dans les industries lourdes à travers le monde ?",
+        "A": "Les meilleures pratiques environnementales dans les industries lourdes comprennent l'adde technologies propres, la réduction des émissions de gaz à effet de serre et la mise en œuvre de programmes de gestion des déchets.",
+        "B": "Les industries lourdes ne peuvent pas adopter de pratiques environnementales en raison de la nature de leurs opérations",
+        "C": "Les meilleures pratiques environnementales consistent uniquement à déplacer les installations industrielles vers des régions moins peuplées.",
+        "D": "Ignorer les normes environnementales est une stratégie courante pour améliorer la rentabilité des industries lourdes.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment les normes environnementales et les réglementations gouvernementales peuvent-elles inciter les industries lourdes à adopter des pratiques plus durables ?",
+        "A": "Les normes environnementales et les réglementations gouvernementales peuvent inciter les industries lourdes à adopter des pratiques plus durables en imposant des amendes et des sanctions en cas de non-respect, tout en offrant des incitations fiscales pour les pratiques écologiques.",
+        "B": "Les industries lourdes ne sont pas concernées par les normes environnementales et les réglementations gouvernementales",
+        "C": "Les réglementations gouvernementales n'ont aucun impact sur les pratiques environnementales des industries lourdes.",
+        "D": "Les normes environnementales sont mises en place uniquement pour nuire aux industries lourdes et entraver leur croissance.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment la surconsommation contribue-t-elle à l'épuisement des ressources naturelles ?",
+        "A": "La surconsommation contribue à l'épuisement des ressources naturelles en demandant plus que ce que la nature peut régénérer, épuisant ainsi les stocks de ressources telles que l'eau, les combustibles fossiles et les minéraux.",
+        "B": "La surconsommation renforce les réserves naturelles en encourageant la production accrue de ressources",
+        "C": "Les ressources naturelles sont inépuisables, et la surconsommation n'a aucun impact sur leur disponibilité.",
+        "D": "La surconsommation n'affecte que les ressources renouvelables et n'a aucun impact sur les ressources non renouvelables.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Que permet l'investissement dans les énergies vertes ?",
+        "A": "L'investissement dans les énergies vertes permet de favoriser le développement et l'utilisation de sources d'énergie renouvelable, contribuant ainsi à la réduction des émissions de gaz à effet de serre et à la transition vers une énergie plus durable.",
+        "B": "L'investissement dans les énergies vertes n'a aucun impact sur l'environnement",
+        "C": "Les énergies vertes ne sont pas une alternative viable et ne peuvent pas répondre aux besoins énergétiques mondiaux",
+        "D": "Investir dans les énergies vertes conduit à une augmentation des émissions de gaz à effet de serre.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment inciter à la réutilisation / recyclage ?",
+        "A": "Pour inciter à la réutilisation/recyclage, des programmes de sensibilisation et d'éducation publique peuvent être mis en place pour informer les gens sur l'importance de réduire les déchets et de favoriser la réutilisation et le recyclage.",
+        "B": "Interdire la réutilisation et le recyclage est une approche efficace pour réduire la consommation de ressources",
+        "C": "Encourager la production excessive de déchets est la meilleure stratégie pour stimuler l'économie.",
+        "D": "La réutilisation et le recyclage n'ont aucun impact positif sur l'environnement.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Comment améliorer l’efficacité énergétique ?",
+        "A": "Pour améliorer l'efficacité énergétique, des mesures telles que l'installation de technologies plus efficaces, l'isolation des bâtiments, et l'adde pratiques économes en énergie peuvent être mises en place.",
+        "B": "Ignorer les pratiques d'efficacité énergétique est la meilleure approche pour réduire les coûts",
+        "C": "Les technologies inefficaces sont plus durables et respectueuses de l'environnement.",
+        "D": "L'augmentation de la consommation énergétique est la clé pour améliorer l'efficacité énergétique.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "A quoi servirait la décarbonation des industries ?",
+        "A": "La décarbonation des industries servirait à réduire les émissions de gaz à effet de serre et à atténuer le changement climatique en remplaçant les sources d'énergie à forte intensité carbone par des alternatives plus propres et durables.",
+        "B": "La décarbonation des industries n'a aucun impact sur les émissions de gaz à effet de serre",
+        "C": "Augmenter les émissions de carbone dans les industries est la meilleure stratégie pour stimuler l'économie.",
+        "D": "Les émissions de carbone des industries n'ont aucun lien avec le changement climatique.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quels sont les avantages environnementaux de la reforestation ?",
+        "A": "Les avantages environnementaux de la reforestation incluent la capture du dioxyde de carbone, la préservation de la biodiversité, et la restauration des écosystèmes.",
+        "B": "La reforestation accélère le réchauffement climatique en libérant davantage de dioxyde de carbone dans l'atmosphère.",
+        "C": "Les forêts sont des émetteurs nets de gaz à effet de serre, donc la reforestation ne contribue pas à la réduction des émissions.",
+        "D": "La déforestation est une meilleure pour soutenir l'économie que la reforestation.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Combien de tonnes équivalent CO2 produit une voiture individuelle par an ?",
+        "A": "Le nombre de tonnes équivalent CO2 produit par une voiture individuelle dépend de plusieurs facteurs, mais en moyenne, une voiture peut produire environ 2,3 tonnes équivalent CO2 par an.",
+        "B": "Les voitures individuelles ne produisent aucune émission de CO2",
+        "C": "Les voitures individuelles produisent plus de 10 tonnes équivalent CO2 par an.",
+        "D": "Les voitures individuelles sont responsables de la production de gaz à effet de serre, mais cela n'a aucun impact sur l'environnement.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quels sont les impacts potentiels de l'éducation sur le changement climatique sur le comportement des étudiants et de la société en général ?",
+        "A": "Cela permet de favoriser la sensibilisation, l'adde comportements durables et la participation à des actions visant à atténuer le changement climatique.",
+        "B": "L'éducation sur le changement climatique ne modifie pas le comportement des individus et n'a aucun effet sur la société.",
+        "C": "L'éducation sur le changement climatique encourage les comportements destructeurs pour l'environnement.",
+        "D": "Les impacts de l'éducation sur le changement climatique sont purement symboliques et n'ont pas de conséquences réelles sur le comportement individuel ou social.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quelle quantité de déchets solides a produit le monde en 2016 ?",
+        "A": "Le monde a produit environ 2 milliards de tonnes de déchets solides en 2016.",
+        "B": "Le monde n'a produit aucun déchet solide en 2016.",
+        "C": "Le monde a produit plus de 10 milliards de tonnes de déchets solides en 2016.",
+        "D": "Les déchets solides mondiaux en 2016 étaient limités à quelques centaines de millions de tonnes.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "L'effort contre le dérèglement climatique doit-il être mondial ?",
+        "A": "Oui, l'effort contre le dérèglement climatique doit être mondial, car le climat est un système global et les émissions de gaz à effet de serre n'ont pas de frontières.",
+        "B": "Non, chaque pays devrait résoudre le problème du dérèglement climatique individuellement sans coopération internationale.",
+        "C": "Le dérèglement climatique n'est pas un problème réel, donc aucun effort mondial n'est nécessaire.",
+        "D": "Seuls les pays développés doivent s'engager dans des actions contre le dérèglement climatique, les autres pays sont dispensés de responsabilités.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "Quel est le principal gaz à effet de serre ?",
+        "A": "Le principal gaz à effet de serre est le dioxyde de carbone (CO2).",
+        "B": "Le principal gaz à effet de serre est l'ozone (O3).",
+        "C": "Les gaz à effet de serre n'ont aucun impact sur le climat.",
+        "D": "Le méthane (CH4) n'a aucun rôle en tant que gaz à effet de serre.",
+        "Explication": "NULL"
+      },
+      {
+        "Question": "changement de transport, Limiter les déplacements (ou les rendre moins polluants)",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "Explication": ""
+      },
+      {
+        "Question": "La surconsommation permet-elle :",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "Explication": ""
+      },
+      {
+        "Question": "Les énergies fossiles sont-elles :",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "Explication": ""
+      },
+      {
+        "Question": "Les industries lourdes sont-elles :",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "Explication": ""
+      }
+    ]
 }
