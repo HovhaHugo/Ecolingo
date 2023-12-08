@@ -177,7 +177,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .question .boutons-reponse .bouton-bas {
@@ -232,12 +232,16 @@
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
   width: 100%;
+}
+
+.question .text-wrapper-button p {
+  text-wrap: wrap;
 }
 
 .question .bouton-choix {
