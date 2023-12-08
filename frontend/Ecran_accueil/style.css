@@ -5,10 +5,7 @@
   justify-content: center;
   width: 100%;
 }
-.image-peroquet{
-  width: 150px;
-  height: 150px;
-}
+
 .accueil .div {
   background-color: #131f24;
   width: 1920px;
@@ -33,7 +30,6 @@
   box-shadow: 0px 5px 4px #15336e;
 }
 
-
 .accueil .fleche-droite {
   position: absolute;
   width: 46px;
@@ -57,14 +53,18 @@
   line-height: normal;
 }
 
+.image-peroquet{
+  left: 120px;
+  width: 170px;
+  height: 170px;
+}
+
 .accueil .text-wrapper-blanc {
-  display: flex;
-  flex-direction: row;
   position: absolute;
   width: 386px;
   height: 242px;
   top: 23px;
-  left: 107px;
+  left: -10px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #ffffff;
@@ -74,13 +74,10 @@
   line-height: normal;
 }
 .accueil .text-wrapper-bleu {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  width: 386px;
-  height: 242px;
+  width: 200px;
+  height: 220px;
   top: 23px;
-  left: 107px;
+  left: 120px;
   font-family: "Inter", Helvetica;
   font-weight: 700;
   color: #2e6de7;
