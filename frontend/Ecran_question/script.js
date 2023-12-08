@@ -22,7 +22,7 @@ function loadQuestion(question){
     listRep = shuffle(["repA","repB","repC","repD"])
 
     document.getElementById(listRep[0]).textContent = question.A_true
-    document.getElementById(listRep[0]).parentElement.parentElement.parentElement.classList += "reponse";
+    document.getElementById(listRep[0]).parentElement.parentElement.parentElement.classList += " reponse";
     document.getElementById(listRep[1]).textContent = question.B
     document.getElementById(listRep[2]).textContent = question.C
     document.getElementById(listRep[3]).textContent = question.D
