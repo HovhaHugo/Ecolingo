@@ -1,5 +1,5 @@
 fetch("./questions.json").then((response) => response.json()).then((json) => initQuestions(json));
-
+clickEvents();
 var life = 3;
 var questions = [];
 var numQuestion = 0;
