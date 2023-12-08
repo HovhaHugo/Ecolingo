@@ -2,16 +2,6 @@
 <html>
   <head>
     <script>
-      fetch("/api/question").then((response) => response.json()).then((json) => loadtext(json));
-
-      function loadtext(question){
-        document.getElementById("question").textContent = question.Question
-        document.getElementById("repA").textContent = question.A
-        document.getElementById("repB").textContent = question.B
-        document.getElementById("repC").textContent = question.C
-        document.getElementById("repD").textContent = question.D
-        document.getElementById("explication").textContent = question.Explication
-      }
     </script>
   </head>
   <body>
