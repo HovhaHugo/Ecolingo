@@ -55,13 +55,23 @@
             </div>
           </div>
         </div>
-        <div class="quit">
-          <div class="overlap-2">
+        <div class="quit" id="quitbutton">
+          <button class="overlap-2">
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
+
+    <script>
+      var quitbutton = document.getElementById("quitbutton");
+      if (quitbutton) {
+        quitbutton.addEventListener("click", function (e) {
+          window.location.href = "../Ecran_accueil/index.html";
+        });
+      }
+    </script>
+
   </body>
 </html>
