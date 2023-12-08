@@ -249,6 +249,7 @@
   border-radius: 20px;
   box-shadow: 0px 4px 4px #00000040;
   height: 100px;
+  margin-bottom: 10px;
 }
 
 .question .bouton-choix:hover {
