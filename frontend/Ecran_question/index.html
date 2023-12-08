@@ -26,37 +26,41 @@
           </div>
         </div>
         <div class="frame">
-          <div class="overlap"><p class="text-wrapper" id="question"></p></div>
+          <div class="overlap"><p class="text-wrapper">Lorem ipsum dolor sit amet ?</p></div>
+          <div class="boutons-reponse">
+            <div class="left_bar_button">
+              <div class="bouton-droite bouton-choix">
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-button">dolor sit</div>
+                </div>
+              </div>
+            </div>
+            <div class="center_bar_button">
+              <div class="bouton-bas bouton-choix">
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-button">amet</div>
+                </div>
+              </div>
+              <div class="bouton-haut bouton-choix">
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-button">lorem ipsum</div>
+                </div>
+              </div>
+            </div>
+            <div class="right_bar_button">
+              <div class="bouton-gauche bouton-choix">
+                <div class="overlap-group-2">
+                  <div class="text-wrapper-button">Réponse D</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="quit" id="quitbutton">
           <button class="overlap-2">
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
-          </div>
-        </div>
-        <div class="boutons-reponse">
-          <div class="bouton-droite">
-            <div class="overlap-group-2">
-              <img class="fleche-droite" src="img/fleche-droite.svg" />
-              <div class="text-wrapper-2"><p id="repA"></p></div>
-            </div>
-          </div>
-          <div class="bouton-bas">
-            <div class="overlap-group-2">
-              <img class="fleche-haut" src="img/fleche-haut-1.svg" />
-              <div class="text-wrapper-3"><p id="repB"></p></div>
-            </div>
-          </div>
-          <div class="bouton-haut">
-            <div class="text-wrapper-4"><p id="repC"></p></div>
-            <img class="fleche-haut-2" src="img/fleche-haut.svg" />
-          </div>
-          <div class="bouton-gauche">
-            <div class="overlap-group-2">
-              <img class="fleche-gauche" src="img/fleche-gauche.svg" />
-              <div class="text-wrapper-5"><p id="repD"></p></div>
-            </div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
@@ -104,6 +108,22 @@
             life--;
             break;
         }
+      }
+
+      function updateLeftButton() {
+        fetch("http://localhost:3000/api/question", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          }})
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Success:", data);
+            updateProgressbar(0);
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
       }
     </script>
 
