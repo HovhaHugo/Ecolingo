@@ -3,11 +3,5 @@ Made by Kenza AIT OUAZZOU, Mathieu HEURTEVIN RUIZ, Hugo AUMOND, Florian BETHENCO
 HEURTEVINRUIZ, Viktor BROTHIER, Ikram SOUKI, Aya MADIH, Imane ABDOU et Clement DUFAU
 
 ## Procédure de lancements 
-
-- site web (quizz, wiki...)
-- jeu video
- - questions pour un champion
- - undercover
- - duolingo, système de vies
- - wario ware (mini jeux)
+- 
 
