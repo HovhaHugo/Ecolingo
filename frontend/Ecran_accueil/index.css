@@ -18,11 +18,16 @@
   align-content: center;
 }
 
-.bouton-droite {
+.bouton-start {
   grid-column: 1/2;
   grid-row: 2/2;
   margin: 0 auto 0 auto;
 }
+
+.bouton-start:hover {
+  animation: tilt-n-move-shaking 0.5s infinite;
+}
+
 
 .image-peroquet {
   vertical-align: middle;
@@ -97,4 +102,12 @@ p {
   to {
     transform: translateY(0.65px);
   }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(0.5em, 0.5em) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0eg); }
+  75% { transform: translate(-0.5em, 0.5em) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
 }
