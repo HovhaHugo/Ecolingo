@@ -20,6 +20,9 @@ button p {
     /* Colors */
     --color-royalblue: #2e6de7;
     --color-white: #fff;
+
+    --collection-1-number: 0px;
+      
 }
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");

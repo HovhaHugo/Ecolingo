@@ -1,133 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../global.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="img/perroquet_tête.svg">
-    <title>ÉCOLINGO</title>
-  </head>
-  <body>
-    <div class="question">
-      <div class="div">
-        <div class="left_side">
-          <div class="lifes">
-            <div class="overlap-group">
-              <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp1" width="100px"/>
-              <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp2" width="100px"/>
-              <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp3" width="100px"/>
-            </div>
-          </div>
-          <div class="success-bar">
-            <div class="success-bar-bg">
-              <div class="success-bar-over">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="frame">
-          <div class="overlap"><p class="text-wrapper" id="question"></p></div>
-          <div class="boutons-reponse">
-            <div class="left_bar_button">
-              <div class="bouton-droite bouton-choix">
-                <div class="overlap-group-2">
-                  <div class="text-wrapper-button"><p id="repA"></p></div>
-                </div>
-              </div>
-            </div>
-            <div class="center_bar_button">
-              <div class="bouton-bas bouton-choix">
-                <div class="overlap-group-2">
-                  <div class="text-wrapper-button"><p id="repB"></p></div>
-                </div>
-              </div>
-              <div class="bouton-haut bouton-choix">
-                <div class="overlap-group-2">
-                  <div class="text-wrapper-button"><p id="repC"></p></div>
-                </div>
-              </div>
-            </div>
-            <div class="right_bar_button">
-              <div class="bouton-gauche bouton-choix">
-                <div class="overlap-group-2">
-                  <div class="text-wrapper-button"><p id="repD"></p></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="quit" id="quitbutton">
-          <button class="overlap-2">
-            <div class="rectangle"></div>
-            <div class="rectangle-2"></div>
-          </button>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../global.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/perroquet_tête.svg">
+  <title>ÉCOLINGO</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="progression">
+        <div class="success-bar-over"></div>
+    </div>
+    <div class="header">
+      <div class="lifes">
+        <div class="overlap-group">
+          <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp1" width="100px" />
+          <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp2" width="100px" />
+          <img alt="perroquet violet" src="../img/perroquet_tête.svg" class="life_point" id="lp3" width="100px" />
         </div>
       </div>
+      <div class="quit" id="quitbutton">
+        <button class="overlap-2">
+          <div class="rectangle"></div>
+          <div class="rectangle-2"></div>
+        </button>
+      </div>
     </div>
+    <div class="question">
+      <div class="rect">
+        <p class="text-wrapper" id="question"></p>
+      </div>
+    </div>
+    <div class="answer_one">
+      <button class="answers">
+        <p id="repA"></p>
+      </button>
+    </div>
+    <div class="answer_two">
+      <button class="answers">
+        <p id="repB"></p>
+      </button>
+    </div>
+    <div class="answer_three">
+      <button class="answers">
+        <p id="repC"></p>
+      </button>
+    </div>
+    <div class="answer_four">
+      <button class="answers">
+        <p id="repD"></p>
+      </button>
+    </div>
+  </div>
 
-    <script>
-      var quitbutton = document.getElementById("quitbutton");
-      if (quitbutton) {
-        quitbutton.addEventListener("click", function (e) {
-          window.location.href = "../Ecran_accueil/index.html";
+
+  <script>
+    var quitbutton = document.getElementById("quitbutton");
+    if (quitbutton) {
+      quitbutton.addEventListener("click", function (e) {
+        window.location.href = "../Ecran_accueil/index.html";
+      });
+    }
+
+    var progressbar = document.querySelector(".success-bar-over");
+    var progressbarvalue = 0;
+    progressbar.style.width = `${progressbarvalue}%`;
+
+    var life = 3;
+
+    function updateProgressbar(value) {
+      if (value == 1) {
+        progressbarvalue += 10;
+        progressbar.style.width = `${progressbarvalue}%`;
+        progressbar.style.color = `#6BD844`;
+      }
+      else if (value == 0) {
+        progressbarvalue -= 10;
+        progressbar.style.color = `#D84444`;
+        updateLife();
+      }
+    }
+
+    function updateLife() {
+      switch (life) {
+
+        case 3:
+          document.getElementById("lp3").src = "./img/perroquet_only_dead.svg";
+          life--;
+          break;
+        case 2:
+          document.getElementById("lp2").src = "./img/perroquet_only_dead.svg";
+          life--;
+          break;
+        case 1:
+          document.getElementById("lp1").src = "./img/perroquet_only_dead.svg";
+          life--;
+          break;
+      }
+    }
+
+    function updateLeftButton() {
+      life_point
+      fetch("http://localhost:3000/api/question", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        }
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+          updateProgressbar(0);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
         });
-      }
+    }
+  </script>
 
-      var progressbar = document.querySelector(".success-bar-over");
-      var progressbarvalue = 0;
-      progressbar.style.width = `${progressbarvalue}%`;
+</body>
 
-      var life = 3;
-
-      function updateProgressbar(value) {
-        if(value == 1) {
-          progressbarvalue += 10;
-          progressbar.style.width = `${progressbarvalue}%`;
-          progressbar.style.color = `#6BD844`;
-        }
-        else if(value == 0) {
-          progressbarvalue -= 10;
-          progressbar.style.color = `#D84444`;
-          updateLife();
-        }
-      }
-
-      function updateLife() {
-        switch(life) {
-
-          case 3:
-            document.getElementById("lp3").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-          case 2:
-            document.getElementById("lp2").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-          case 1:
-            document.getElementById("lp1").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-        }
-      }
-
-      function updateLeftButton() {life_point
-        fetch("http://localhost:3000/api/question", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          }})
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Success:", data);
-            updateProgressbar(0);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
-      }
-    </script>
-
-  </body>
 </html>
