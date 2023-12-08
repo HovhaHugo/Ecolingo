@@ -7,7 +7,7 @@ const shuffle = (array) => {
 }; 
 
 function loadtext(question){
-    question = data.question[0]
+    question = question.data[0]
     document.getElementById("question").textContent = question.Question
     listRep = shuffle(["repA","repB","repC","repD"])
 
