@@ -20,7 +20,7 @@
           </div>
           <div class="success-bar">
             <div class="success-bar-bg">
-              <div class="success-bar-over">
+              <div class="success-bar-over" style="width: 0%;">
               </div>
             </div>
           </div>
@@ -28,35 +28,29 @@
         <div class="frame">
           <div class="overlap"><p class="text-wrapper" id="question"></p></div>
           <div class="boutons-reponse">
-            <div class="left_bar_button">
-              <div class="bouton-droite bouton-choix">
+              <div class="bouton-choix">
                 <div class="overlap-group-2">
                   <div class="text-wrapper-button"><p id="repA"></p></div>
                 </div>
               </div>
-            </div>
-            <div class="center_bar_button">
-              <div class="bouton-bas bouton-choix">
+              <div class="bouton-choix">
                 <div class="overlap-group-2">
                   <div class="text-wrapper-button"><p id="repB"></p></div>
                 </div>
               </div>
-              <div class="bouton-haut bouton-choix">
+              <div class="bouton-choix">
                 <div class="overlap-group-2">
                   <div class="text-wrapper-button"><p id="repC"></p></div>
                 </div>
               </div>
-            </div>
-            <div class="right_bar_button">
-              <div class="bouton-gauche bouton-choix">
+              <div class="bouton-choix">
                 <div class="overlap-group-2">
                   <div class="text-wrapper-button"><p id="repD"></p></div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
-        <div class="quit" id="quitbutton">
+        <div class="quit" id="quitbutton" onclick="window.location.href = '../Ecran_accueil/index.html';">
           <button class="overlap-2">
             <div class="rectangle"></div>
             <div class="rectangle-2"></div>
@@ -64,68 +58,5 @@
         </div>
       </div>
     </div>
-
-    <script>
-      var quitbutton = document.getElementById("quitbutton");
-      if (quitbutton) {
-        quitbutton.addEventListener("click", function (e) {
-          window.location.href = "../Ecran_accueil/index.html";
-        });
-      }
-
-      var progressbar = document.querySelector(".success-bar-over");
-      var progressbarvalue = 0;
-      progressbar.style.width = `${progressbarvalue}%`;
-
-      var life = 3;
-
-      function updateProgressbar(value) {
-        if(value == 1) {
-          progressbarvalue += 10;
-          progressbar.style.width = `${progressbarvalue}%`;
-          progressbar.style.color = `#6BD844`;
-        }
-        else if(value == 0) {
-          progressbarvalue -= 10;
-          progressbar.style.color = `#D84444`;
-          updateLife();
-        }
-      }
-
-      function updateLife() {
-        switch(life) {
-
-          case 3:
-            document.getElementById("lp3").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-          case 2:
-            document.getElementById("lp2").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-          case 1:
-            document.getElementById("lp1").src = "./img/perroquet_only_dead.svg";
-            life--;
-            break;
-        }
-      }
-
-      function updateLeftButton() {
-        fetch("http://localhost:3000/api/question", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          }})
-          .then((response) => response.json())
-          .then((data) => {
-            console.log("Success:", data);
-            updateProgressbar(0);
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
-      }
-    </script>
-
   </body>
 </html>
