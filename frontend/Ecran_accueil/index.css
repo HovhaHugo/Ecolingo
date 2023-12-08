@@ -69,3 +69,37 @@ p {
 .text-wrapper-bleu {
   color: #2e6de7;
 }
+
+
+/* ANIMATION LOGO */
+
+#path76,
+#path79 {
+  animation: side-to-side 1s infinite alternate;
+}
+
+#path80,
+#path77,
+#g3 {
+  animation: up-down 1.3s infinite alternate;
+}
+
+@keyframes side-to-side {
+  from {
+    transform: translateX(-0.65%);
+  }
+
+  to {
+    transform: translateX(0.65%);
+  }
+}
+
+@keyframes up-down {
+  from {
+    transform: translateY(-0.65px);
+  }
+
+  to {
+    transform: translateY(0.65px);
+  }
+}
