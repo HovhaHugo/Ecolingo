@@ -1,7 +1,3 @@
-body {
-  background-color: #131f24;
-}
-
 .accueil {
   display: grid;
   grid-template-columns: 1;
@@ -58,7 +54,6 @@ p {
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
-  color: #ffffff;
 }
 
 .accueil .text-wrapper {
