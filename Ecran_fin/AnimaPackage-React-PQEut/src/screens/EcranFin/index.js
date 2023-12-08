@@ -1,0 +1,1 @@
+export { EcranFin } from "./EcranFin";
