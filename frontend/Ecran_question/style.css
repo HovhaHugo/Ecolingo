@@ -355,3 +355,9 @@
     min-width: 0;
   }
 }
+
+.text-wrapper-button p {
+  font-size: 1em;
+  justify-content: center;
+
+}
