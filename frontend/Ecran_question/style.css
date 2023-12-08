@@ -1,7 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row: 0.5vh 9.5vh 40vh 25vh 25vh;
+  grid-template-rows: 1vh 9vh 35vh 27.5vh 27.5vh;
   width: 100vw;
   height: 100vh;
 }
@@ -11,8 +11,13 @@
   grid-row: 1/2;
 }
 
-.header {
-  grid-column: 1/3;
+.lifes {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.quit {
+  grid-column: 2/3;
   grid-row: 2/3;
 }
 
@@ -45,6 +50,9 @@
   padding: 1em;
 }
 
+p {
+  margin: 0;
+}
 
 .question .lifes {
   width: fit-content;
