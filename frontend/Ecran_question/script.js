@@ -1,21 +1,56 @@
-fetch("http://localhost:3000/api/questions").then((response) => response.json()).then((json) => loadtext(json));
+fetch("./questions.json").then((response) => response.json()).then((json) => initQuestions(json));
 
 var life = 3;
+var questions = [];
+var numQuestion = 0;
+
+function initQuestions(json){
+    questions = json.data;
+    loadQuestion(questions[numQuestion]);
+}
 
 const shuffle = (array) => { 
     return array.sort(() => Math.random() - 0.5); 
 }; 
 
-function loadtext(question){
-    question = question.data[0]
+function loadQuestion(question){
+    numQuestion++;
+    if (numQuestion >= 10){
+        numQuestion = 10;
+    }
     document.getElementById("question").textContent = question.Question
     listRep = shuffle(["repA","repB","repC","repD"])
 
     document.getElementById(listRep[0]).textContent = question.A_true
+    document.getElementById(listRep[0]).parentElement.parentElement.parentElement.classList += "reponse";
     document.getElementById(listRep[1]).textContent = question.B
     document.getElementById(listRep[2]).textContent = question.C
     document.getElementById(listRep[3]).textContent = question.D
-    //console.log(question)
+}
+
+function bonneReponse(){
+    updateProgressbar(1);
+    // Ajouter explication
+    loadQuestion(questions[numQuestion]);
+}
+
+function mauvaiseReponse(){
+    updateProgressbar(0);
+    // Ajouter explication
+    loadQuestion(questions[numQuestion]);
+}
+
+function clickEvents(){
+    buttons = document.getElementsByClassName("bouton-choix");
+    for(button in buttons){
+        if(button.classList.contains("reponse")){
+            button.onclick = bonneReponse();
+        }
+        else{
+            button.onclick = mauvaiseReponse();
+        }
+    }
+    console.log("Hey");
 }
 
 function updateProgressbar(value) {
