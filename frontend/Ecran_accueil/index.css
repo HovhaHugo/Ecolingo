@@ -1,79 +1,71 @@
-.bouton-droite-child {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 300px);
-  border-radius: 20px;
-  background-color: var(--color-royalblue);
-  box-shadow: 0 5px 4px #15336e;
-  width: 600px;
-}
-.fleche-droite-icon {
-  position: absolute;
-  height: 74.14%;
-  top: 12.93%;
-  bottom: 12.93%;
-  left: calc(50% + 243.01px);
-  border-radius: 5px;
-  max-height: 100%;
-  width: 45.56px;
-}
-.lancer-un-quiz {
-  position: absolute;
-  height: 54%;
-  top: 23%;
-  left: calc(50% - 193px);
-  font-size: 40px;
-  display: flex;
-  font-family: var(--font-inter);
-  color: var(--color-white);
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  width: 386px;
-}
-.bouton-droite {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  height: 9.26%;
-  top: 68.89%;
-  bottom: 21.85%;
-  left: calc(50% - 300px);
-  width: 600px;
-}
-.l {
-  color: var(--color-royalblue);
-}
-.col-ngo {
-  position: absolute;
-  top: calc(50% - 109.5px);
-  left: calc(50% - 615px);
-}
-.logo,
-.logo-child {
-  position: absolute;
-  top: calc(50% - 132.5px);
-  left: calc(50% - 53px);
-  width: 200px;
-  height: 244px;
-}
-.logo {
-  top: calc(50% - 133px);
-  left: calc(50% - 615px);
-  width: 1230px;
-  height: 265px;
-}
-.accueil {
-  position: absolute;
+body {
   background-color: #131f24;
-  width: 100%;
-  height: 100%;
+}
+
+.accueil {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo {
+  grid-row: 1/2;
+  grid-column: 1;
+}
+
+.logo p {
+  justify-content: center;
+  align-content: center;
+}
+
+.bouton-droite {
+  grid-column: 1/2;
+  grid-row: 2/2;
+  margin: 0 auto 0 auto;
+}
+
+.image-peroquet {
+  vertical-align: middle;
+  width: auto;
+  height: 10vw;
+}
+
+.start_game {
+  position: relative;
+  width: 600px;
+  height: 100px;
+  background-color: #2e6ce6;
+  border-radius: 20px;
+  border-color: white;
+  box-shadow: 0px 5px 4px #15336e;
+}
+
+.accueil .fleche-droite {
+  vertical-align: middle;
+  height: 1em;
+  padding-left: 0.3em;
+}
+
+p {
   text-align: center;
-  font-size: 200px;
-  color: var(--color-white);
-  font-family: var(--font-inter);
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 10vw;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.accueil .text-wrapper {
+  font-size: 4em;
+  margin: 0;
+}
+
+.text-wrapper-bleu {
+  color: #2e6de7;
 }

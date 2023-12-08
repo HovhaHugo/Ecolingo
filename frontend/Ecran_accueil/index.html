@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="accueil">
-      <button class="bouton-droite" id="boutonDroite">
-        <div class="bouton-droite-child"></div>
-        <img
-          class="fleche-droite-icon"
-          alt=""
-          src="./public/fleche-droite.svg"
-        />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-        <b class="lancer-un-quiz">Lancer un quiz</b>
-      </button>
-      <div class="logo">
-        <b class="col-ngo">
-          <span>ÉCO</span>
-          <span class="l">L NGO</span>
-        </b>
-        <img
-          class="logo-child"
-          id="peroquet"
-          alt=""
-          src="./public/rectangle-11.svg"
-        />
-      </div>
+  <link rel="stylesheet" href="./global.css" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" />
+</head>
+
+<body>
+  <div class="accueil">
+    <div class="logo">
+      <p>ÉCO<span class="text-wrapper-bleu">L<img class="image-peroquet" src="public/perroquet_only.svg" />NGO</span></p>
     </div>
+    
+    <div class="bouton-droite" id="boutonDroite">
+      <button class="start_game">
+        <p class="text-wrapper">Lancer un quiz<img class="fleche-droite" src="public/fleche-droite.svg" /></p>
+      </button>
+    </div>
+  </div>
 
-    <script>
-      var boutonDroite = document.getElementById("boutonDroite");
-      if (boutonDroite) {
-        boutonDroite.addEventListener("click", function (e) {
-          window.location.href = "../Ecran_question/index.html";
-        });
-      }
-    </script>
-  </body>
+  <script>
+    var boutonDroite = document.getElementById("boutonDroite");
+    if (boutonDroite) {
+      boutonDroite.addEventListener("click", function (e) {
+        window.location.href = "../Ecran_question/index.html";
+      });
+    }
+  </script>
+
+</body>
+
 </html>
