@@ -13,8 +13,8 @@
           <div class="lifes">
             <div class="overlap-group">
               <img src="img\perroquet_only.svg" class="life_point" id="lp1" width="100px"/>
-              <img src="img\perroquet_only.svg" class="life_point" id="lp1" width="100px"/>
-              <img src="img\perroquet_only.svg" class="life_point" id="lp1" width="100px"/>
+              <img src="img\perroquet_only.svg" class="life_point" id="lp2" width="100px"/>
+              <img src="img\perroquet_only.svg" class="life_point" id="lp3" width="100px"/>
             </div>
           </div>
           <div class="success-bar">
@@ -70,6 +70,43 @@
         quitbutton.addEventListener("click", function (e) {
           window.location.href = "../Ecran_accueil/index.html";
         });
+      }
+
+      var progressbar = document.querySelector(".success-bar-over");
+      var progressbarvalue = 0;
+      progressbar.style.width = `${progressbarvalue}%`;
+
+      var life = 3;
+
+      function updateProgressbar(value) {
+        if(value == 1) {
+          progressbarvalue += 10;
+          progressbar.style.width = `${progressbarvalue}%`;
+          progressbar.style.color = `#6BD844`;
+        }
+        else if(value == 0) {
+          progressbarvalue -= 10;
+          progressbar.style.color = `#D84444`;
+          updateLife();
+        }
+      }
+
+      function updateLife() {
+        switch(life) {
+
+          case 3:
+            document.getElementById("lp3").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+          case 2:
+            document.getElementById("lp2").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+          case 1:
+            document.getElementById("lp1").src = "./img/perroquet_only_dead.svg";
+            life--;
+            break;
+        }
       }
     </script>
 
