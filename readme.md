@@ -2,7 +2,7 @@
 Made by Kenza AIT OUAZZOU, Mathieu HEURTEVIN RUIZ, Hugo AUMOND, Florian BETHENCOURT, Corentin ESNAULT, Pierre-Louis LECLERC, Teddy ASTIE, Matieu
 HEURTEVINRUIZ, Viktor BROTHIER, Ikram SOUKI, Aya MADIH, Imane ABDOU et Clement DUFAU
 
-## Idées 
+## Procédure de lancements 
 
 - site web (quizz, wiki...)
 - jeu video
